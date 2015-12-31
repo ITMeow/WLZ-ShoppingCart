@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "WLZ_ShoppingCarController.h"
 
+typedef void (^clickBlock)(UIButton *);
 @interface WLZ_HeardView : UIView
+
+@property(nonatomic,copy)clickBlock blockBT;
+
+- (instancetype)initWithFrame:(CGRect)frame section :(NSInteger )section carDataArrList:(NSMutableArray *)carDataArrList block:(void (^)(UIButton *))blockbt;
+
+
 
 @end

@@ -8,6 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
+#import "WLZ_ShopViewModel.h"
+#import "WLZ_CommodityModel.h"
+
+@class WLZ_CommodityModel;
+
 @interface WLZ_ShoppIngCarModel : NSObject
 
+
+
+
+
+@property(nonatomic,copy)NSString *item_id;
+@property(nonatomic,copy)NSString *count;
+@property(nonatomic,copy)NSString *item_size;
+@property(nonatomic,strong)WLZ_CommodityModel *item_info;
+@property(nonatomic,assign)BOOL isSelect;
+
+
+
+@property(nonatomic,assign)NSInteger type;
+
+@property(nonatomic,weak)WLZ_ShopViewModel *vm;
 @end

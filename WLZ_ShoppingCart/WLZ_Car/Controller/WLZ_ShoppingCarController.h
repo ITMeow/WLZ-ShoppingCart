@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WLZ_ShoppingCarController : UIViewController
 
+#import "WLZ_ShoppIngCarModel.h"
+#import "WLZ_ShopViewModel.h"
+
+#import "UIColor+WLZ_HexRGB.h"
+
+#import "WLZ_ShoppingCarCell.h"
+#import "WLZ_ShoppingCartEndView.h"
+@interface WLZ_ShoppingCarController : UIViewController
+#define APPScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define APPScreenWidth [[UIScreen mainScreen] bounds].size.width
 @end

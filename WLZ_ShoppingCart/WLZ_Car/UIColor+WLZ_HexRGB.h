@@ -10,4 +10,5 @@
 
 @interface UIColor (WLZ_HexRGB)
 
++ (UIColor *)colorFromHexRGB:(NSString *)inColorString;
 @end

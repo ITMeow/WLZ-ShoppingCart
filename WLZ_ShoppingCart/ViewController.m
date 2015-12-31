@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WLZ_ShoppingCarController.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor=[UIColor whiteColor];
+    
+    
+    
 }
+
+
+
+- (IBAction)goShoppingCar:(id)sender {
+    
+    
+    WLZ_ShoppingCarController *car = [[WLZ_ShoppingCarController alloc]init];
+    [self.navigationController pushViewController:car animated:YES];
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
